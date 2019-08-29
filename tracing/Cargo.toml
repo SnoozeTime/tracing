@@ -38,7 +38,7 @@ ansi_term = "0.11"
 humantime = "1.2"
 futures = "0.1"
 log = "0.4"
-criterion = { version = "0.2", default_features = false }
+criterion = { version = "0.3", default_features = false }
 
 [features]
 default = ["std"]
