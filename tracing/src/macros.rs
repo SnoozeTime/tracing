@@ -2065,7 +2065,7 @@ macro_rules! callsite {
 #[doc(hidden)]
 macro_rules! level_enabled {
     ($lvl:expr) => {
-        $crate::dispatcher::exists() && $lvl <= $crate::level_filters::STATIC_MAX_LEVEL
+        $crate::dispatcher::has_been_set() && $lvl <= $crate::level_filters::STATIC_MAX_LEVEL
     };
 }
 
